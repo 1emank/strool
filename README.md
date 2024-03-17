@@ -1,0 +1,2 @@
+# strool
+Boolean strings
