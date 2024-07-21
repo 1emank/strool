@@ -1,5 +1,6 @@
 """
-Feel totally free to read, modify, test and play with this file!
+Feel totally free to read, copy, modify, test and play with this file!
+(But don't push it to the repository, lol!)
 """
 import sys
 sys.path.append( '/'.join(__file__.split('/')[:-2]) )
