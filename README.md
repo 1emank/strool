@@ -1,17 +1,20 @@
 # strool
 
 It's a lot like strings, but with boolean controls. They could display
-the text or not, depending on the parameters. The recommended way to
-import is "import strool as stl".
+the text or not, depending on the parameters.
 
-Inside the module there's available (check each one for more details):
-- String_bool (alias: b and s_b): it will give text if "case" is True.
-- String_case (alias: c and s_c): it will give text if "case" matches a
-case in "case_list".
-- whoosh: returns an invisible version of the string provided.
-- CONSTANTS (BOOL, INT, STR, STL, ALL, F_STR, F_STL, F_ALL): constants
-to use in the "return_type" parameter, of the .print() method of
-String_bool and String_case. More details in `help(stl.b.print)`
+Inside the module there's available:
+- Strool (str bool): gives text if "case" is True.
+- Strook (str case): gives text if "case" can be found in "cases".
+- Strool.whoosh: returns an invisible version of the string provided. It
+can be the object's "self". To do that, don't pass any argument.
+
+Strook inherits from Strool, so `isinstance(Strook(), Strool)` will
+return True. Check each one for more details.
+
+The recommended way to import is one of the following:
+- import strool as st : to use "st.l" and "st.k"
+- from strool import * : to use "Strool" or "Strook" directly.
 
 ## Installation
 

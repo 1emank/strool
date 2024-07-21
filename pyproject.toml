@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "strool"
-version = "0.9.0"
+version = "1.0.0"
 authors = [
   { name="Carlos González", email="carlos.a.gb95@gmail.com" },
 ]
 description = "Small module to control strings with booleans"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
