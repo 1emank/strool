@@ -5,8 +5,8 @@ Feel totally free to read, copy, modify, test and play with this file!
 import sys
 sys.path.append( '/'.join(__file__.split('/')[:-2]) )
 
-from src.strool.strool import *
-import src.strool.strool as st
+from src.strool import *
+import src.strool as st
 from typing import Callable, Literal, Iterable
 from io import StringIO
 
@@ -75,3 +75,16 @@ test_strook.debug('var', ignore_from_class = (None,), ignore_single_underscore =
 from timeit import timeit
 print( 'Strool 1.000.000 times:', timeit(Strool) )
 print( 'Strook 1.000.000 times:', timeit(Strook) )
+
+try: st.l; print('st.l properly accesed')
+except: pass
+try: st.k; print('st.k properly accesed')
+except: pass
+try: l; print('l properly accesed')
+except: pass
+try: k; print('k properly accesed')
+except: pass
+try: Strook; print('Srook properly accesed')
+except: pass
+try: Strool; print('Strool properly accesed')
+except: pass

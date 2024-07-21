@@ -21,7 +21,7 @@ from typing import Iterable, Any, IO, Literal
 from collections import UserString
 from re import sub
 
-__all__ = ['Strool', 'Strook']
+__all__ = ['Strool', 'Strook', 'k', 'l']
 
 class Strool(UserString):
     """Strool - A string, but it will show text or not, depending on the
@@ -282,5 +282,5 @@ class Strook(Strool):
         if self.negated: return not case in cases
         else: return case in cases
 
-l = Strool
 k = Strook
+l = Strool
